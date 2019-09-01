@@ -15,8 +15,8 @@ body{
 .slot-left{
     flex: 2;
     margin: 2em;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) ;
-    border-radius: 25%;
+    /* background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) ;
+    border-radius: 25%; */
 }
    
 
@@ -40,3 +40,53 @@ body{
     color: hsl(0, 36%, 70%);
     letter-spacing: 2px;
 }
+.fakeput{
+    border: 1px solid hsl(0, 36%, 70%);
+	display: flex;
+	align-items: center;
+    border-radius: 2em;
+    height: 48px;
+    border-radius: 50px;
+    padding: 0 65px 0 25px;
+}
+.err_bdr {
+    border: hsl(0, 93%, 68%);
+}
+.fakeput-input{
+    border: none;
+    background: none;
+	flex: 1;
+	align-self: stretch;
+	padding-left: 1em;
+}
+.fakeput-input:focus {
+	outline: none;
+}
+button{
+    cursor: pointer;
+    border: 1px solid #f8bfbf;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 65px;
+    height: 48px;
+    box-shadow: 0 10px 20px -12px #413a3a;
+    background: linear-gradient(135deg,#f8bfbf,#ee8c8c);
+}
+.error{
+	margin: 0 5px;
+	font-size: 20px;
+	height: 1em;
+	width: 1em;
+	border-radius: 2em;
+	text-align: center;
+	font-weight: bold;
+}
+img{
+    border-style: none;
+}
+.alert{
+    color: hsl(0, 93%, 68%);
+}
+/* *, ::after, ::before {
+    box-sizing: inherit;
+} */
