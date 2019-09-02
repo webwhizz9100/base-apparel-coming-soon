@@ -80,20 +80,32 @@ button{
     font-weight: bold;
     opacity: 0;
 }
-input:invalid + .alert {opacity: 1;}
+/* form  input:focus:required:invalid + .alert {opacity: 1;} */
 
-input:invalid + .error {opacity: 1;}
+/* error icon appears when input is invalid */
+form input:required:focus:invalid {
+    background: url("./images/icon-error.svg") no-repeat 95% 50%;
+  }
+/* input:invalid + span {opacity: 1;} */
 
 img{
     border-style: none;
 }
-.alert{
+/* .alert{
     color: hsl(0, 93%, 68%);
     opacity: 0;
-}
+} */
 
-input:invalid {
+
+/* input:invalid + .fakeput {
     border: 5px solid hsl(0, 93%, 68%);
+   
+  } */
+  .fakeput input:invalid {
+    border: 5px solid hsl(0, 93%, 68%);
+  }
+  .alert form:forcus:required:invalid{
+      opacity: 1;
   }
 
   
