@@ -51,12 +51,21 @@
       </h1>
       <p class="content">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with
         announcements and our launch deals.</p>
-      <form action="#">
+     <script>
+       function validate(input){
+          var parent = input.parentElement;	
+          var isInvalid = parent.querySelector('input:invalid');
+          
+          if(isInvalid) {
+            parent.classList.add('invalid');
+          } else {
+            parent.classList.remove('invalid');
+          }
+        }
+     </script>
+        <form action="#">
         <div class="fakeput">
-          <input class="fakeput-input" type="email" name="#" placeholder="Email Address" title="Please provide valid email!" required>
-          <!-- <span class="error">
-              <img src="./images/icon-error.svg" alt="">
-            </span> -->
+          <input oninput= "validate(this)" class="fakeput-input" type="email" name="#" placeholder="Email Address" title="Please provide valid email!" required>
           <div class="submit">
             <button type="submit" value="submit">
               <img  src="./images/icon-arrow.svg" alt="">
