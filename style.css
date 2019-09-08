@@ -10,7 +10,12 @@ body{
     max-width: 1440px;
 }
 .logo{
-    margin: 2em;
+    padding: 10px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 445px;
+    justify-self: center;
+    margin-left: -15px;
 }
 .flex-item {
 	height: 100vh;
@@ -18,34 +23,49 @@ body{
 }
 .slot-left{
     margin: 2em;
-    width: 70%;
+    width: 60%;
+    display: flex;
+  justify-content: space-between;
+    flex-direction: column;
 }
  
 .slot-right{
     background:url("./images/hero-desktop.jpg");
-    width: 30%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 375px;
-    justify-self: center;
+    max-width: 40%;
+    height: 100vh;
 
+}
+.sl_wrap{
+    margin: 103px 0px;
+    max-width: 446px;
+}
+
+.sl_wrap > h1{
+    margin-top: 1.2em;
+    margin-bottom: .3em;
+    font-size: 2.8em;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    
 }
 .title-top{
     color: hsl(0, 36%, 70%);
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: 300;
+    font-weight: 100;
 }
 .title-btm{
-    color: hsl(0, 6%, 24%);
-    text-transform: uppercase;
-    letter-spacing: 10px;
     display: block;
 }
 .content{
     color: hsl(0, 36%, 70%);
     letter-spacing: 2px;
+}
+form{
+  margin-top: 2.2em;
 }
 .fakeput{
     border: 1px solid hsl(0, 36%, 70%);
@@ -99,10 +119,10 @@ button{
 
 /* error icon appears when input is invalid */
 form input:required:focus:invalid {
-    background: url("./images/icon-error.svg") no-repeat 95% 50%;
+    background: url() no-repeat 95% 50%;
   }
 
-
+.alert{color: hsl(0, 93%, 68%);}
 
 .invalid {border: 5px solid hsl(0, 93%, 68%); }
  
