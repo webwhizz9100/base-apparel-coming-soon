@@ -14,7 +14,6 @@ body{
     align-items: flex-start;
     width: 100%;
     max-width: 445px;
-    justify-self: center;
     margin-left: -15px;
 }
 .flex-item {
@@ -25,8 +24,10 @@ body{
     margin: 2em;
     width: 60%;
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
  
 .slot-right{
